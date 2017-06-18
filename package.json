@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node server.js --ignore public/",
-    "prestart": "webpack"
+    "dev": "webpack -wd"
   },
   "author": "znz",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.4",
     "ejs": "^2.5.5",
     "express": "^4.14.0",
+    "jquery": "^3.2.1",
     "mongodb": "^2.2.21",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -25,11 +27,12 @@
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-2": "^6.18.0",
     "eslint": "^3.13.1",
     "eslint-plugin-react": "^6.9.0",
     "nodemon": "^1.11.0",
-    "react-hot-loader": "^1.3.1",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   }
