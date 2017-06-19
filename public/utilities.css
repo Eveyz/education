@@ -1,0 +1,11 @@
+.no-padding {
+  padding: 0px 0px 0px 0px !important;
+}
+
+.no-margin {
+  margin: 0px 0px 0px 0px !important;
+}
+
+.chinese-slim {
+  font-family: "Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
