@@ -1,4 +1,5 @@
 var React = require('react');
+import { Link } from 'react-router-dom';
 
 class HEADER extends React.Component {
   constructor(props){
@@ -21,10 +22,10 @@ class HEADER extends React.Component {
               <p className="no-margin">创建我的项目</p>
             </div>
             <div className="col-md-6">
-              <h3 className="text-md-center no-margin fresh-red">原创者</h3>
+              <h3 className="text-md-center no-margin fresh-red"><Link to="/" className="link-styless">原创者</Link></h3>
             </div>
             <div className="col-md-1" onClick={this.onSearch.bind(this)}><p className="no-margin chinese-slim">搜索</p></div>
-            <div className="col-md-1"><p className="no-margin chinese-slim">加入</p></div>
+            <div className="col-md-1"><p className="no-margin chinese-slim"><Link to="/login" className="link-styless">加入</Link></p></div>
             <div className="col-md-1"><p className="no-margin">登录</p></div>
           </div>
         </div>
