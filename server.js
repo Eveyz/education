@@ -1,12 +1,14 @@
 const express = require('express');
 const apiRouter = require('./api/index.js');
 const config = require('./config.js');
+// const passport = require('./auth.js');
 
 const server = express();
 
 server.set('view engine', 'ejs');
 
-server.use('api', apiRouter);
+// server.use('api', apiRouter);
+server.use('/', apiRouter);
 server.use(express.static('public'));
 
 // set up assets for app
