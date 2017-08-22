@@ -16,7 +16,7 @@ class Book extends React.Component {
             </div>
             <div className="col-md-3">
               <div className="btn-group" role="group" aria-label="Button group with nested dropdown">
-                <button type="button" className="btn btn-outline-info">编辑</button>
+                <button type="button" className="btn btn-outline-info"><b>编辑</b></button>
 
                 <div className="btn-group" role="group">
                   <button id="btnGroupDrop1" type="button" className="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
