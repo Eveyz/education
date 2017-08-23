@@ -7,6 +7,7 @@ const path = require('path');
 const config = require('./config.js');
 const apiRouter = require('./api/index.js');
 const blogsAPI = require('./api/blogs.js');
+const booksAPI = require('./api/books.js');
 const router = require('react-router');
 
 // const passport = require('./auth.js');
@@ -31,6 +32,7 @@ mongoose.connect(url);
 // API middleware
 server.use('/', apiRouter);
 server.use('/blogs', blogsAPI);
+server.use('/books', booksAPI);
 
 // server.use(function(req, res) {
 //   Router.match({ routes: routes.default, location: req.url }, function(err, redirectLocation, renderProps) {
