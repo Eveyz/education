@@ -27,33 +27,14 @@ server.use(express.static(path.join(__dirname, 'public')));
 */
 var mongoose = require('mongoose');
 var url = 'mongodb://localhost:27017/buy';
-mongoose.connect(url);
+mongoose.connect(url, (err, db) => {
+  if(err) throw err;
+});
 
 // API middleware
 server.use('/', apiRouter);
 server.use('/blogs', blogsAPI);
 server.use('/books', booksAPI);
-
-// server.use(function(req, res) {
-//   Router.match({ routes: routes.default, location: req.url }, function(err, redirectLocation, renderProps) {
-//     if (err) {
-//       res.status(500).send(err.message)
-//     } else if (redirectLocation) {
-//       res.status(302).redirect(redirectLocation.pathname + redirectLocation.search)
-//     } else if (renderProps) {
-//       var html = ReactDOM.renderToString(React.createElement(Router.RoutingContext, renderProps));
-//       var page = swig.renderFile('views/index.html', { html: html });
-//       res.status(200).send(page);
-//     } else {
-//       res.status(404).send('Page Not Found')
-//     }
-//   });
-// });
-
-// server.get('*', function(req, res){
-//   res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
-// });
-
 
 // set up assets for app
 server.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
