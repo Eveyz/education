@@ -9,6 +9,8 @@ var eventSchema = new mongoose.Schema({
     description: String,
     author: String,
     duration: String,
+    start_time: Date,
+    end_time: Date,
     created_at: Date,
     updated_at: Date
 });

@@ -8,6 +8,7 @@ const config = require('./config.js');
 const apiRouter = require('./api/index.js');
 const blogsAPI = require('./api/blogs.js');
 const booksAPI = require('./api/books.js');
+const usersAPI = require('./api/users.js');
 const router = require('react-router');
 
 // const passport = require('./auth.js');
@@ -35,6 +36,7 @@ mongoose.connect(url, (err, db) => {
 server.use('/', apiRouter);
 server.use('/blogs', blogsAPI);
 server.use('/books', booksAPI);
+server.use('/users', usersAPI);
 
 // set up assets for app
 server.use('/js', express.static(__dirname + '/node_modules//popper.js/dist/umd'));
