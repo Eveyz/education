@@ -34,21 +34,19 @@ class SignupForm extends React.Component {
       <div className="custom-modal" ref="modal">
         <div className="custom-modal-content" ref="modalContent">
           <span className="custom-close" onClick={this.closeModal.bind(this)}>&times;</span>
+          <hr/>
           <input className="form-control form-size" type="text" placeholder="邮箱地址"></input>
           <br/>
           <input className="form-control form-size" type="text" placeholder="用户名"></input>
           <br/>
           <div className="form-row">
-            <div className="col-md-6 no-padding-left">
+            <div className="col-md-6">
               <input type="text" className="form-control form-size" placeholder="姓氏"></input>
             </div>
-            <div className="col-md-6 no-padding-right">
+            <div className="col-md-6">
               <input type="text" className="form-control form-size" placeholder="名字"></input>
             </div>
           </div>
-          <br/>
-          <br/>
-          <br/>
           <br/>
           <input className="form-control form-size" type="password" placeholder="密码"></input>
           <br/>

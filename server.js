@@ -37,9 +37,10 @@ server.use('/blogs', blogsAPI);
 server.use('/books', booksAPI);
 
 // set up assets for app
+server.use('/js', express.static(__dirname + '/node_modules//popper.js/dist/umd'));
 server.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
 server.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
-server.use('/js', express.static(__dirname + '/node_modules/tether/dist/js'));
+// server.use('/js', express.static(__dirname + '/node_modules/tether/dist/js'));
 server.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 server.use('/css', express.static(__dirname + '/node_modules/font-awesome/css'));
 server.use('/css', express.static(__dirname + '/public'));
