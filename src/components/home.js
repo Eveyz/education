@@ -8,7 +8,7 @@ class Home extends React.Component {
         <Dashboard />
         <div className="container">
           <br/>
-          <h3>热门项目</h3>
+          <h3>热门活动</h3>
         </div>
       </div>
     );

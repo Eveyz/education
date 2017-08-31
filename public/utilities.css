@@ -2,8 +2,24 @@
   padding: 0px 0px 0px 0px !important;
 }
 
+.no-padding-left {
+  padding-left: 0px !important;
+}
+
+.no-padding-right {
+  padding-right: 0px !important;
+}
+
 .no-margin {
   margin: 0px 0px 0px 0px !important;
+}
+
+.no-margin-left {
+  margin-left: 0px !important;
+}
+
+.no-margin-right {
+  margin-right: 0px !important;
 }
 
 .chinese-slim {
@@ -13,4 +29,20 @@
 .link-styless, .link-styless:hover, .link-styless:visited, .link-styless:link, .link-styless:active {
   color: inherit; /* blue colors for links too */
   text-decoration: none !important; /* no underline */
+}
+
+.custom-btn {
+  background-color: #02CCBA;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+  border-radius: 3px;
+  color: white !important;
+}
+
+.display-block {
+  display: block;
+}
+
+.form-size {
+  height: 48px;
 }
