@@ -32,7 +32,7 @@ class BookForm extends React.Component {
         </input>
         <br/>
         <br/>
-        <button type="button" className="btn btn-success btn-sm" onClick={this.handleSubmit.bind(this)}>Add</button>
+        <button type="button" className="btn" onClick={this.handleSubmit.bind(this)}>Add</button>
       </div>
     );
   }

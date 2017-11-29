@@ -9,14 +9,22 @@ const User = require('../models/user');
 
 /* Signup User */
 router.post('/signup', (req, res) => {
-	var body = req.body;
-
-	User.create(body, function(err, users) {
-		if(err) {
-			throw err;
+	if(req.body.email && req.body.username && req.body.password && req.body.passwordCon) {
+		userData = {
+			email: req.body.email,
+			username: req.body.username,
+			password: req.body.password,
+			passwordCon: req.body.passwordCon
 		}
-		res.json(users);
-	})
+
+		User.create(userData, function(err, users) {
+			if(err) {
+				throw err;
+			}
+			res.json(users);
+		})
+	}
+
 });
 
 module.exports = router;

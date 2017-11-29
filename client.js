@@ -1,3 +1,4 @@
+// document.write("It works.");
 var React = require("react");
 var ReactDOM = require("react-dom");
 var Root = require("./src/components/Root.js");

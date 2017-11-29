@@ -49,33 +49,46 @@ class SignupForm extends React.Component {
       <div className="custom-modal" ref="modal">
         <div className="custom-modal-content" ref="modalContent">
           <span className="custom-close" onClick={this.closeModal.bind(this)}>&times;</span>
-          <hr/>
-          <input className="form-control form-size" type="text" placeholder="邮箱地址" ref="email"></input>
-          <br/>
-          <input className="form-control form-size" type="text" placeholder="用户名" ref="username"></input>
-          <br/>
-          <div className="form-row">
-            <div className="col-md-6">
-              <input type="text" className="form-control form-size" placeholder="姓氏" ref="firstname"></input>
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control form-size" placeholder="名字" ref="lastname"></input>
+          <div className="row">
+            <div className="col s12 no-padding">
+              <div className="row no-margin">
+                <div className="input-field col s6">
+                  <input id="first_name" type="text" className="validate" ref="firstname"></input>
+                  <label htmlFor="first_name">姓氏</label>
+                </div>
+                <div className="input-field col s6">
+                  <input id="last_name" type="text" className="validate" ref="lastname"></input>
+                  <label htmlFor="last_name">名字</label>
+                </div>
+              </div>
+              <div className="row no-margin">
+                <div className="input-field col s12">
+                  <input id="username" type="text" className="validate" ref="username"></input>
+                  <label htmlFor="username">用户名</label>
+                </div>
+              </div>
+              <div className="row no-margin">
+                <div className="input-field col s12">
+                  <input id="password" type="password" className="validate" ref="password"></input>
+                  <label htmlFor="password">密码</label>
+                </div>
+              </div>
+              <div className="row no-margin">
+                <div className="input-field col s12">
+                  <input id="email" type="email" className="validate" ref="email"></input>
+                  <label htmlFor="email">邮箱地址</label>
+                </div>
+              </div>
+              <p>
+                <input type="checkbox" id="agreements" defaultChecked="checked" ref="agreement" />
+                <label htmlFor="agreements">我同意注册条款</label>
+              </p>
+              <button type="button" className="btn waves-effect waves-light" onClick={this.handleSubmit.bind(this)}>注册</button>
+              <hr/>
+              <p>已有账号，请直接登录</p>
+              <button type="button" className="btn waves-effect waves-light red">登录</button>
             </div>
           </div>
-          <br/>
-          <input className="form-control form-size" type="password" placeholder="密码" ref="password"></input>
-          <br/>
-          <div className="form-group">
-            <div className="form-check">
-              <label className="form-check-label">
-                <input className="form-check-input" type="checkbox" ref="agreement" /> 我同意注册条款
-              </label>
-            </div>
-          </div>
-          <button type="button" className="btn btn-lg btn-success btn-block" onClick={this.handleSubmit.bind(this)}>注册</button>
-          <hr/>
-          <p>已有账号，请直接登录</p>
-          <button type="button" className="btn btn-outline-info">登录</button>
         </div>
       </div>
     );
