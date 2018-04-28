@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.16.2",
+    "bcrypt": "^1.0.3",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
     "bootstrap": "^4.0.0-alpha.4",
@@ -19,12 +20,15 @@
     "express": "^4.14.0",
     "express-session": "^1.15.3",
     "font-awesome": "^4.7.0",
+    "gdax": "^0.4.2",
     "jquery": "^3.2.1",
+    "materialize-css": "^0.100.2",
     "mongodb": "^2.2.21",
     "mongoose": "^4.10.7",
     "morgan": "^1.8.2",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
+    "popper.js": "^1.12.5",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.5",
@@ -32,7 +36,9 @@
     "react-router-dom": "^4.1.1",
     "redux": "^3.7.0",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "shrinkwrap": "^0.4.0",
+    "tether": "^1.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -48,6 +54,6 @@
     "eslint-plugin-react": "^6.9.0",
     "nodemon": "^1.11.0",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "https://registry.npmjs.org/webpack-dev-server/-/webpack-dev-server-2.7.1.tgz"
   }
 }

@@ -1,0 +1,12 @@
+.header-padding {
+  padding: 15px 0px 15px 0px;
+}
+
+.header-shadow {
+  box-shadow: rgba(46, 61, 73, 0.12) 0px 5px 15px 0px;
+}
+
+.no-border-input {
+  border: none;
+  border-bottom: 1px solid gray;
+}

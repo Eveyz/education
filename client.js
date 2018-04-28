@@ -1,8 +1,20 @@
+// document.write("It works.");
 var React = require("react");
 var ReactDOM = require("react-dom");
-var APP = require("./components/APP.js.jsx");
+var Root = require("./src/components/Root.js");
+var store = require("./src/stores/store.js");
+
+import { Provider } from "react-redux";
 import { Router, Route, Link, browserHistory } from "react-router";
 
-const app = document.getElementById('react-container');
+// import { applyMiddleware, createStore } from 'redux';
+// import logger from 'redux-logger';
+// import thunk from 'redux-thunk';
 
-ReactDOM.render(<APP />, app);
+const app = document.getElementById('app-container');
+// const middleware = applyMiddleware(thunk, logger());
+
+ReactDOM.render(
+  <Root store={store} />, 
+  app
+);

@@ -1,0 +1,13 @@
+.book-single {
+  box-shadow: 2px 2px 2px #ecf0f1;
+  background-color: white;
+  padding: 20px 0px 20px 0px;
+  border-radius: 4px;
+  border: 1px solid #e8eaed;
+}
+
+.time-style {
+  margin: 4px 0px 0px 0px;
+  font-size: 13px;
+  color: #737373;
+}
