@@ -28,7 +28,7 @@ class HEADER extends React.Component {
                 <p className="emerald no-margin">探索</p>
               </div>
               <div className="col m4">
-                <h5 className="center-align no-margin fresh-red"><Link to="/" className="link-styless">原创者</Link></h5>
+                <h5 className="center-align no-margin fresh-red"><Link to="/" className="link-styless">GDAX</Link></h5>
               </div>
               <div className="col m1" onClick={this.onSearch.bind(this)}><p className="no-margin chinese-slim">搜索</p></div>
               <div className="col m1"><p className="no-margin chinese-slim text-md-center" onClick={this.signupModal.bind(this)}>登录</p></div>

@@ -1,14 +1,13 @@
 var React = require('react');
-var Dashboard = require('./dashboard.js');
 
-class Home extends React.Component {
+class Distribution extends React.Component {
   render() {
     return (
       <div className="grey-background">
-        <Dashboard />
+        <p>here</p>
       </div>
     );
   }
 };
 
-module.exports = Home
+module.exports = Distribution

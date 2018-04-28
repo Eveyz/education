@@ -26,11 +26,11 @@ server.use(express.static(path.join(__dirname, 'public')));
 /* API 
  * @author: znz
 */
-var mongoose = require('mongoose');
-var url = 'mongodb://localhost:27017/buy';
-mongoose.connect(url, (err, db) => {
-  if(err) throw err;
-});
+// var mongoose = require('mongoose');
+// var url = 'mongodb://localhost:27017/buy';
+// mongoose.connect(url, (err, db) => {
+//   if(err) throw err;
+// });
 
 // API middleware
 server.use('/', apiRouter);
